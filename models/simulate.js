@@ -59,8 +59,8 @@ function secondsToHms(d) {
 
 function batteryLife(t){  
 	var elapsed = Date.now() - t
-	t_remaining = fullTime - (elapsed*10) 
-	t_battery = secondsToHms(Math.floor(t_remaining/1000))
+	let t_remaining = fullTime - (elapsed*10) 
+	let t_battery = secondsToHms(Math.floor(t_remaining/1000))
 	console.log(Math.floor(elapsed/1000) + ' s')
     
 	/*     console.log('----------Time calculation Battery----------');
@@ -71,8 +71,8 @@ function batteryLife(t){
 
 function oxygenLife(t){  
 	var elapsed = Date.now() - t
-	t_remaining = fullTime - elapsed 
-	t_oxygen = secondsToHms(Math.floor(t_remaining/1000))
+	let t_remaining = fullTime - elapsed 
+	let t_oxygen = secondsToHms(Math.floor(t_remaining/1000))
 
 	/*     console.log('----------Time calculation Oxygen----------');
     console.log(Math.floor(elapsed/1000) + ' s');

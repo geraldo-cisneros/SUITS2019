@@ -7,8 +7,8 @@ var interval_switch
 var urlencodeParser = bodyParser.urlencoded({extended: false})
 
 //Import 
-Simulation = require('./models/simulate')
-SuitSwitch = require('./models/suitswitch')
+const Simulation = require('./models/simulate')
+const SuitSwitch = require('./models/suitswitch')
 
 //Database connector
 mongoose.connect('mongodb://localhost/spacesuit')
